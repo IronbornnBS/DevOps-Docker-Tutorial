@@ -16,7 +16,7 @@ services:
    accountownerapp:
      depends_on: 
        - db
-     image: my-registry:50000/dockerizing/accountowner:build-2
+     image: my-registry:50000/dockerizing/accountowner:build-${BUILD_NUMBER_ACCOUNTOWNER}
    integration:
      depends_on: 
        - accountownerapp
