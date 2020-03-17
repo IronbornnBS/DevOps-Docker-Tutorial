@@ -24,7 +24,7 @@ services:
      build: 
         context: .
         dockerfile: Dockerfile.Integration
-      environment: 
+     environment: 
         - TEAMCITY_PROJECT_NAME
      ports:
        - "8080:5000"
